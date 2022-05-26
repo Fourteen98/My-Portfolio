@@ -9,98 +9,108 @@
 body {
   background-color: #191765;
   font-family: Roboto, sans-serif;
+  background-image: url("../images/Top\ circles.svg");
+  z-index: 99;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  padding-top: 50px;
+  align-items: center;
 }
 
-.main-content {
-  padding: 0 10% 0 10%;
+a {
+  text-decoration: none;
 }
 
-nav {
+header {
   display: flex;
   justify-content: space-between;
+  padding: 20px 30px;
   align-items: center;
-  height: 10vh;
 }
 
-nav img {
-  width: 3%;
+header a {
+  color: #FFFFFF;
+  height: 48px;
+  width: 375px;
+  left: 0px;
+  top: 46px;
+  border-radius: 0px;
+  display: flex;
+  align-items: center;
 }
 
-nav span {
-  font-size: 3rem;
-  color: white;
+header nav img{
+  width: 66px;
+  height: 66px;
 }
 
-.hero {
+section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 55vh;
+  padding-top: 24px;
 }
 
-.hero-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 3rem;
-  height: 50vh;
-}
-
-h3 {
+section h1 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-size: 48px;
   color: #7d73fc;
-  font-size: 10rem;
-  padding-bottom: 2rem;
-  font-weight: 700;
-  z-index: 2;
+  line-height: 72px;
+  font-weight: 700px;
+  text-align: center;
+  letter-spacing: 0.37px;
 }
 
-h5 {
-  color: #edecff;
-  font-size: 7rem;
+section span {
   font-weight: 500;
-  padding-bottom: 3rem;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
+  color: #edecff;
 }
 
-p {
-  color: #c8c8d4;
-  align-items: center;
-  text-align: center;
-  font-size: 40px;
-  line-height: 78px;
+section p {
+  padding-top: 30px;
   font-weight: 400;
-}
-
-.hero-content h3 {
+  font-size: 20px;
+  line-height: 28px;
+  width: 327px;
+  color: #c8c8d4;
   text-align: center;
+  padding-bottom: 20px;
+  margin: 9px auto;
 }
 
-.top-circle {
-  width: 35rem;
-  bottom: 5rem;
-  position: absolute;
-  left: 25rem;
+.breakage {
+  width: 100%;
+  padding: 24px;
 }
 
-.tech-content-1 {
+.skillset{
   display: flex;
+  flex-wrap: column wrap;
+  padding-top: 20px;
   justify-content: space-evenly;
   align-items: stretch;
-  padding-top: 3rem;
   line-height: 24px;
+  list-style-type: none;
+  gap: 100px;
 }
 
-.tech-content-1 .languages p {
-  color: #f5f5ff;
+#languages-header{
+  color: #9490FF
 }
 
-.tech-content-1 .frameworks p {
-  color: #f5f5ff;
+#frameworks-header{
+  color:#9490FF
 }
 
-#language {
-  color: #9490ff;
+#skill-header{
+    color:#9490FF
 }
 
-#framework {
-  color: #9490ff;
+li{
+  color: #F5F5FF;
 }
