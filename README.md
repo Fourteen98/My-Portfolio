@@ -1,8 +1,9 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Hello World
+# Portfolio
 
->This is my first project on my second day at Microverse and the goal for this project is to master all of the tools and best practices I have learned about in previous excercises. 
+> Portfolio is one of the most powerful tools in software developer toolbox. it is an easy way of showing what you are truly capable of as a developer, and a quick way for for recruiters to and hiring managers to get an idea of what you can bring to their team
+
 
 ## Built With
 
@@ -20,7 +21,7 @@
 git clone https://github.com/Fourteen98/My-Portfolio.git
 ```
 #### - Open project directory and open index.html file with your prefered browser
-####  - Expect the page below when the browser loads
+####  - screenshot based on 443px screen size per specification giving in project.
 ![Screenshot](screenshot.png)
 ## Authors
 
