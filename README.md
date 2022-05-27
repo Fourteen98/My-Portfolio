@@ -17,10 +17,10 @@
 ### RUN Project
 #### - Clone project 
 ```
-git clone https://github.com/Fourteen98/Hello-Microverse.git
+git clone https://github.com/Fourteen98/My-Portfolio.git
 ```
 #### - Open project directory and open index.html file with your prefered browser
-####  - Expect the image below when the page loads
+####  - Expect the page below when the browser loads
 ![Screenshot](screenshot.png)
 ## Authors
 
