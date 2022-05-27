@@ -10,7 +10,7 @@ body {
   background-color: #191765;
   font-family: Roboto, sans-serif;
   background-image: url("../images/Top\ circles.svg");
-  z-index: 99;
+
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
@@ -44,7 +44,7 @@ header nav img {
   height: 66px;
 }
 
-section {
+.section-1 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -52,7 +52,7 @@ section {
   align-content: space-between;
 }
 
-section h1 {
+.section-1 h1 {
   padding-top: 30px;
   padding-bottom: 30px;
   font-size: 48px;
@@ -63,7 +63,7 @@ section h1 {
   letter-spacing: 0.37px;
 }
 
-section span {
+.section-1 span {
   font-weight: 500;
   font-size: 32px;
   line-height: 44px;
@@ -71,7 +71,7 @@ section span {
   color: #edecff;
 }
 
-section p {
+.section-1 p {
   padding-top: 30px;
   font-weight: 400;
   font-size: 20px;
@@ -88,6 +88,14 @@ section p {
   padding: 24px;
 }
 
+.section-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 24px;
+  align-content: space-between;
+}
+
 .skillset-1 {
   display: flex;
   flex-wrap: wrap-reverse;
@@ -101,7 +109,7 @@ section p {
 .skillset-2 {
   display: flex;
   align-items: flex-start;
-  padding-right: 200px;
+  padding-right: 210px;
 }
 
 #languages-header {
@@ -125,4 +133,99 @@ li {
   display: flex;
   flex-wrap: wrap;
   align-content: space-between;
+}
+
+.section-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  width: 200px;
+  height: 104px;
+  flex-direction: column;
+  gap: 30px;
+}
+.card .card-img {
+  width: 100%;
+  height: 40px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.section-3 .card .github img {
+  width: 18px;
+  height: 20px;
+}
+
+.section-3 .work-card {
+  width: 77px;
+  height: 40px;
+}
+
+.section3 .card .linkedin img {
+  width: 18px;
+  height: 20px;
+}
+
+.section3 .card .two-fingers img {
+  width: 14.7px;
+  height: 20px;
+}
+
+.section3 .card .twitter img {
+  width: 20px;
+  height: 20px;
+}
+
+.section3 .card .medium img {
+  width: 20px;
+  height: 20px;
+}
+
+.section-3 .arrow-card {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-3 .arrow-card .arrow img {
+  height: 18px;
+  width: 21px;
+}
+
+.section-3 .arrow-card span {
+  color: #a2a3ae;
+}
+
+.my-recent-work {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  height: 145px;
+  width: 327px;
+  display: flex;
+  flex-direction: column;
+}
+
+.my-recent-work h4 {
+  color: #9490ff;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 52px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.my-recent-work .breakage {
+  width: 100%;
+  height: 17px;
+}
+
+.section-4{
+  display: flex;
+  border: 1px solid red;
+  height: 50px;
 }
