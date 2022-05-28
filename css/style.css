@@ -229,6 +229,7 @@ li {
   border: 1px solid red;
   align-items: center;
   justify-content: center;
+  height: auto;
 }
 
 .section-4 .project {
@@ -237,14 +238,14 @@ li {
   display: grid;
   grid-template-columns: 1fr;
   width: 395px;
-  height: 3000px;
+  height: auto;
   grid-gap: 10px;
   padding: 24px;
 }
 
 .section-4 .project > div {
   /* background-color: black; */
-  height: 100%;
+  height: auto;
   width: 100%;
 }
 
@@ -417,6 +418,186 @@ li {
 }
 
 .section-4 .project .featured-project-2 .details-card .project-body .see-project span {
+  font-size: 12px;
+  font-weight: 500px;
+  line-height: 24px;
+}
+
+
+
+
+.section-4 .featured-project-3{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid red;
+
+}
+
+.section-4 .featured-project-3 .recipe-card {
+  width: 100%;
+  height: 236px;
+  padding-bottom: 10px;
+}
+
+.section-4 .featured-project-3 .recipe-card img {
+  width: 100%;
+  height: 100%;
+}
+
+
+.section-4 .featured-project-3 .details-card {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+  justify-content: left;
+  height: 100%;
+}
+
+.section-4 .featured-project-3 .details-card .project-header {
+  padding: 10px;
+  line-height: 44px;
+  width: 327px;
+  height: 105px;
+  font-weight: 500px;
+}
+
+.section-4 .featured-project-3 .details-card h4 {
+  color: #fff;
+  font-size: 32px;
+}
+
+.featured-project-3 .details-card .project-body {
+  width: 100%;
+  height: 100%;
+  color: #dcdce8;
+  font-size: 20px;
+  font-weight: 400px;
+  line-height: 28px;
+  vertical-align: top;
+  padding-bottom: 10px;
+}
+
+.section-4 .project .featured-project-3 .details-card .project-body .programming-languages {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr 1fr;
+  padding: 12px;
+  gap: 8px;
+  height: 80px;
+  width: 100%;
+  margin-top: 30px;
+  justify-content: center;
+  align-content: center;
+}
+
+.section-4 .project .featured-project-3 .details-card .project-body .programming-languages > div {
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid #555;
+}
+
+.section-4 .project .featured-project-3 .details-card .project-body .programming-languages .ruby {
+  border-right: none;
+}
+
+.section-4 .project .featured-project-3 .details-card .project-body .see-project {
+  height: 48px;
+  width: 89px;
+  background-color: #7d73fc;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.section-4 .project .featured-project-3 .details-card .project-body .see-project span {
+  font-size: 12px;
+  font-weight: 500px;
+  line-height: 24px;
+}
+
+
+.section-4 .featured-project-4{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid red;
+}
+
+.section-4 .featured-project-4 .recipe-card {
+  width: 100%;
+  height: 236px;
+  padding-bottom: 10px;
+}
+
+.section-4 .featured-project-4 .recipe-card img {
+  width: 100%;
+  height: 100%;
+}
+
+.section-4 .featured-project-4 .details-card {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+  justify-content: left;
+  height: 100%;
+}
+
+.section-4 .featured-project-4 .details-card .project-header {
+  padding: 10px;
+  line-height: 44px;
+  width: 327px;
+  height: 105px;
+  font-weight: 500px;
+}
+
+.section-4 .featured-project-4 .details-card h4 {
+  color: #fff;
+  font-size: 32px;
+}
+
+.section-4 .featured-project-4 .details-card .project-body {
+  width: 100%;
+  height: 100%;
+  color: #dcdce8;
+  font-size: 20px;
+  font-weight: 400px;
+  line-height: 28px;
+  vertical-align: top;
+  padding-bottom: 10px;
+}
+
+.section-4 .project .featured-project-4 .details-card .project-body .programming-languages {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr 1fr;
+  padding: 12px;
+  gap: 8px;
+  height: 80px;
+  width: 100%;
+  margin-top: 30px;
+  justify-content: center;
+  align-content: center;
+}
+
+.section-4 .project .featured-project-4 .details-card .project-body .programming-languages > div {
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid #555;
+}
+
+.section-4 .project .featured-project-4 .details-card .project-body .programming-languages .ruby {
+  border-right: none;
+}
+
+.section-4 .project .featured-project-4 .details-card .project-body .see-project {
+  height: 48px;
+  width: 89px;
+  background-color: #7d73fc;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.section-4 .project .featured-project-4 .details-card .project-body .see-project span {
   font-size: 12px;
   font-weight: 500px;
   line-height: 24px;
