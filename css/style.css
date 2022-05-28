@@ -109,6 +109,7 @@ header nav img {
   display: flex;
   align-items: flex-start;
   padding-right: 210px;
+  line-height: 24px;
 }
 
 #languages-header {
@@ -149,56 +150,56 @@ li {
   gap: 30px;
 }
 
-.section-3 .card .card-img {
+.card .card-img {
   width: 100%;
   height: 40px;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
 }
 
-.section-3 .card .github img {
+.github img {
   width: 18px;
   height: 20px;
 }
 
-.section-3 .work-card {
+.work-card img {
   width: 77px;
   height: 40px;
 }
 
-.section-3 .card .linkedin img {
+.linkedin img {
   width: 18px;
   height: 20px;
 }
 
-.section-3 .card .two-fingers img {
+.two-fingers img {
   width: 14.7px;
   height: 20px;
 }
 
-.section-3 .card .twitter img {
+.twitter img {
   width: 20px;
   height: 20px;
 }
 
-.section-3 .card .medium img {
+.medium img {
   width: 20px;
   height: 20px;
 }
 
-.section-3 .arrow-card {
+.arrow-card {
   display: flex;
   gap: 10px;
   justify-content: center;
   align-items: center;
 }
 
-.section-3 .arrow-card .arrow img {
+.arrow img {
   height: 18px;
   width: 21px;
 }
 
-.section-3 .arrow-card span {
+.arrow-card span {
   color: #a2a3ae;
 }
 
@@ -226,13 +227,12 @@ li {
 
 .section-4 {
   display: flex;
-  border: 1px solid red;
   align-items: center;
   justify-content: center;
   height: auto;
 }
 
-.section-4 .project {
+.project {
   align-items: center;
   justify-content: center;
   display: grid;
@@ -243,30 +243,28 @@ li {
   padding: 24px;
 }
 
-.section-4 .project > div {
-  /* background-color: black; */
+.project > div {
   height: auto;
   width: 100%;
 }
 
-.section-4 .featured-project-1 {
+.featured-project {
   display: flex;
   flex-direction: column;
-  border: 1px solid red;
 }
 
-.section-4 .featured-project-1 .recipe-card {
+.recipe-card {
   width: 100%;
   height: 236px;
   padding-bottom: 10px;
 }
 
-.section-4 .featured-project-1 .recipe-card img {
+.recipe-card img {
   width: 100%;
   height: 100%;
 }
 
-.section-4 .featured-project-1 .details-card {
+.details-card {
   display: flex;
   flex-direction: column;
   padding-top: 10px;
@@ -274,7 +272,7 @@ li {
   height: 100%;
 }
 
-.featured-project-1 .details-card .project-header {
+.project-header {
   padding: 10px;
   line-height: 44px;
   width: 327px;
@@ -282,12 +280,12 @@ li {
   font-weight: 500px;
 }
 
-.featured-project-1 .details-card h4 {
+.details-card h4 {
   color: #fff;
   font-size: 32px;
 }
 
-.featured-project-1 .details-card .project-body {
+.project-body {
   width: 100%;
   height: 100%;
   color: #dcdce8;
@@ -298,7 +296,7 @@ li {
   padding-bottom: 10px;
 }
 
-.section-4 .project .featured-project-1 .details-card .project-body .programming-languages {
+.programming-languages {
   display: grid;
   grid-template-columns: 1fr 1fr 2fr 1fr;
   padding: 12px;
@@ -310,17 +308,17 @@ li {
   align-content: center;
 }
 
-.section-4 .project .featured-project-1 .details-card .project-body .programming-languages > div {
+.programming-languages > div {
   justify-content: center;
   align-items: center;
   border-right: 1px solid #555;
 }
 
-.section-4 .project .featured-project-1 .details-card .project-body .programming-languages .ruby {
+.ruby {
   border-right: none;
 }
 
-.section-4 .project .featured-project-1 .details-card .project-body .see-project {
+.see-project {
   height: 48px;
   width: 89px;
   background-color: #7d73fc;
@@ -330,275 +328,104 @@ li {
   align-items: center;
 }
 
-.section-4 .project .featured-project-1 .details-card .project-body .see-project span {
+.see-project span {
   font-size: 12px;
   font-weight: 500px;
   line-height: 24px;
 }
 
-.section-4 .featured-project-2 {
+.section-5 {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  padding-top: 24px;
+  align-content: space-between;
   border: 1px solid red;
 }
 
-.section-4 .featured-project-2 .recipe-card {
-  width: 100%;
-  height: 236px;
-  padding-bottom: 10px;
-}
-
-.section-4 .featured-project-2 .recipe-card img {
-  width: 100%;
-  height: 100%;
-}
-
-.section-4 .featured-project-2 .details-card {
+.contact-us-board {
   display: flex;
   flex-direction: column;
-  padding-top: 10px;
-  justify-content: left;
-  height: 100%;
-}
-
-.section-4 .featured-project-2 .details-card .project-header {
-  padding: 10px;
-  line-height: 44px;
   width: 327px;
-  height: 105px;
-  font-weight: 500px;
+  height: 164;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 
-.section-4 .project .featured-project-2 .details-card h4 {
-  color: #fff;
+.contact-us-header {
   font-size: 32px;
+  font-weight: 500;
+  line-height: 44px;
+  text-align: center;
+  color: #9390ff;
 }
 
-.section-4 .project .featured-project-2 .details-card .project-body {
-  width: 100%;
-  height: 100%;
-  color: #dcdce8;
-  font-size: 20px;
-  font-weight: 400px;
-  line-height: 28px;
-  vertical-align: top;
-  padding-bottom: 10px;
+.contact-us-body {
+  padding-top: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #f5f5ff;
+  text-align: center;
+  padding-bottom: 40px;
 }
 
-.section-4 .project .featured-project-2 .details-card .project-body .programming-languages {
-  display: grid;
-  grid-template-columns: 1fr 1fr 2fr 1fr;
-  padding: 12px;
-  gap: 8px;
-  height: 80px;
-  width: 100%;
-  margin-top: 30px;
-  justify-content: center;
-  align-content: center;
-}
-
-.section-4 .project .featured-project-2 .details-card .project-body .programming-languages > div {
-  justify-content: center;
-  align-items: center;
-  border-right: 1px solid #555;
-}
-
-.section-4 .project .featured-project-2 .details-card .project-body .programming-languages .ruby {
-  border-right: none;
-}
-
-.section-4 .project .featured-project-2 .details-card .project-body .see-project {
-  height: 48px;
-  width: 89px;
-  background-color: #7d73fc;
+.contact-form {
   display: flex;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
+  flex-direction: column;
+  gap: 20px;
 }
 
-.section-4 .project .featured-project-2 .details-card .project-body .see-project span {
+.contact-us-board .see-project span {
   font-size: 12px;
   font-weight: 500px;
   line-height: 24px;
+  color: #edecff;
 }
 
-
-
-
-.section-4 .featured-project-3{
+footer .card {
   display: flex;
+  width: 200%;
+  height: 40px;
   flex-direction: column;
-  border: 1px solid red;
-
+  justify-content: center;
+  align-content: center;
+  margin: 40px;
+  gap: 5px;
 }
 
-.section-4 .featured-project-3 .recipe-card {
-  width: 100%;
-  height: 236px;
-  padding-bottom: 10px;
-}
-
-.section-4 .featured-project-3 .recipe-card img {
-  width: 100%;
-  height: 100%;
-}
-
-
-.section-4 .featured-project-3 .details-card {
-  display: flex;
-  flex-direction: column;
-  padding-top: 10px;
-  justify-content: left;
-  height: 100%;
-}
-
-.section-4 .featured-project-3 .details-card .project-header {
-  padding: 10px;
-  line-height: 44px;
-  width: 327px;
-  height: 105px;
-  font-weight: 500px;
-}
-
-.section-4 .featured-project-3 .details-card h4 {
-  color: #fff;
-  font-size: 32px;
-}
-
-.featured-project-3 .details-card .project-body {
-  width: 100%;
-  height: 100%;
-  color: #dcdce8;
-  font-size: 20px;
-  font-weight: 400px;
-  line-height: 28px;
-  vertical-align: top;
-  padding-bottom: 10px;
-}
-
-.section-4 .project .featured-project-3 .details-card .project-body .programming-languages {
+footer .card .card-img {
+  width: 200px;
+  height: 40px;
   display: grid;
-  grid-template-columns: 1fr 1fr 2fr 1fr;
-  padding: 12px;
-  gap: 8px;
-  height: 80px;
-  width: 100%;
-  margin-top: 30px;
+  padding-left: 30px;
   justify-content: center;
   align-content: center;
+  grid-template-columns: repeat(5, 1fr);
 }
 
-.section-4 .project .featured-project-3 .details-card .project-body .programming-languages > div {
-  justify-content: center;
-  align-items: center;
-  border-right: 1px solid #555;
+footer .work-card {
+  width: 77px;
+  height: 40px;
 }
 
-.section-4 .project .featured-project-3 .details-card .project-body .programming-languages .ruby {
-  border-right: none;
+footer .card .linkedin img {
+  width: 18px;
+  height: 20px;
 }
 
-.section-4 .project .featured-project-3 .details-card .project-body .see-project {
-  height: 48px;
-  width: 89px;
-  background-color: #7d73fc;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
+footer .card .two-fingers img {
+  width: 14.7px;
+  height: 20px;
 }
 
-.section-4 .project .featured-project-3 .details-card .project-body .see-project span {
-  font-size: 12px;
-  font-weight: 500px;
-  line-height: 24px;
+footer .card .twitter img {
+  width: 20px;
+  height: 20px;
 }
 
-
-.section-4 .featured-project-4{
-  display: flex;
-  flex-direction: column;
-  border: 1px solid red;
-}
-
-.section-4 .featured-project-4 .recipe-card {
-  width: 100%;
-  height: 236px;
-  padding-bottom: 10px;
-}
-
-.section-4 .featured-project-4 .recipe-card img {
-  width: 100%;
-  height: 100%;
-}
-
-.section-4 .featured-project-4 .details-card {
-  display: flex;
-  flex-direction: column;
-  padding-top: 10px;
-  justify-content: left;
-  height: 100%;
-}
-
-.section-4 .featured-project-4 .details-card .project-header {
-  padding: 10px;
-  line-height: 44px;
-  width: 327px;
-  height: 105px;
-  font-weight: 500px;
-}
-
-.section-4 .featured-project-4 .details-card h4 {
-  color: #fff;
-  font-size: 32px;
-}
-
-.section-4 .featured-project-4 .details-card .project-body {
-  width: 100%;
-  height: 100%;
-  color: #dcdce8;
-  font-size: 20px;
-  font-weight: 400px;
-  line-height: 28px;
-  vertical-align: top;
-  padding-bottom: 10px;
-}
-
-.section-4 .project .featured-project-4 .details-card .project-body .programming-languages {
-  display: grid;
-  grid-template-columns: 1fr 1fr 2fr 1fr;
-  padding: 12px;
-  gap: 8px;
-  height: 80px;
-  width: 100%;
-  margin-top: 30px;
-  justify-content: center;
-  align-content: center;
-}
-
-.section-4 .project .featured-project-4 .details-card .project-body .programming-languages > div {
-  justify-content: center;
-  align-items: center;
-  border-right: 1px solid #555;
-}
-
-.section-4 .project .featured-project-4 .details-card .project-body .programming-languages .ruby {
-  border-right: none;
-}
-
-.section-4 .project .featured-project-4 .details-card .project-body .see-project {
-  height: 48px;
-  width: 89px;
-  background-color: #7d73fc;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-}
-
-.section-4 .project .featured-project-4 .details-card .project-body .see-project span {
-  font-size: 12px;
-  font-weight: 500px;
-  line-height: 24px;
+footer .card .medium img {
+  width: 20px;
+  height: 20px;
 }
