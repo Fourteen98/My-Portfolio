@@ -11,6 +11,10 @@ body {
   font-family: Roboto, sans-serif;
   padding-top: 50px;
   align-items: center;
+  background-image: url("../images/big_bg.svg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
 }
 
 a {
@@ -45,11 +49,6 @@ header nav img {
   align-items: center;
   padding-top: 24px;
   align-content: space-between;
-}
-
-.section-1 img {
-  position: absolute;
-  width: 100%;
 }
 
 .section-1 h1 {
@@ -145,11 +144,6 @@ li {
   align-items: center;
 }
 
-.section-3 img {
-  position: absolute;
-  width: 100%;
-}
-
 .card {
   display: flex;
   width: 200px;
@@ -199,7 +193,7 @@ li {
   display: flex;
   gap: 10px;
   justify-content: center;
-  align-items: center;
+  align-content: center;
 }
 
 .arrow img {
@@ -235,6 +229,7 @@ li {
 
 .section-4 {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   height: auto;
@@ -305,24 +300,23 @@ li {
 }
 
 .programming-languages {
-  display: grid;
-  grid-template-columns: 1fr 1fr 2fr 1fr;
-  padding: 12px;
-  gap: 8px;
-  height: 80px;
-  width: 100%;
-  margin-top: 30px;
+  padding-bottom: 20px;
+  padding-top: 20px;
   justify-content: center;
   align-content: center;
+  gap: 8px;
 }
 
-.programming-languages > div {
-  justify-content: center;
-  align-items: center;
-  border-right: 1px solid #555;
+.programming-languages ul li {
+  list-style: none;
+  display: inline-block;
+  border-right: 1px solid #a2a3ae;
+  padding: 10px;
+  line-height: 20px;
+  font-size: 15px;
 }
 
-.ruby {
+.programming-languages .ruby {
   border-right: none;
 }
 
