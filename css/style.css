@@ -9,13 +9,12 @@
 body {
   background-color: #191765;
   font-family: Roboto, sans-serif;
-  background-image: url("../images/Top\ circles.svg");
-  z-index: 99;
+  padding-top: 50px;
+  align-items: center;
+  background-image: url("../images/big_bg.svg");
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
-  padding-top: 50px;
-  align-items: center;
 }
 
 a {
@@ -44,7 +43,7 @@ header nav img {
   height: 66px;
 }
 
-section {
+.section-1 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -52,7 +51,7 @@ section {
   align-content: space-between;
 }
 
-section h1 {
+.section-1 h1 {
   padding-top: 30px;
   padding-bottom: 30px;
   font-size: 48px;
@@ -63,7 +62,7 @@ section h1 {
   letter-spacing: 0.37px;
 }
 
-section span {
+.section-1 span {
   font-weight: 500;
   font-size: 32px;
   line-height: 44px;
@@ -71,7 +70,7 @@ section span {
   color: #edecff;
 }
 
-section p {
+.section-1 p {
   padding-top: 30px;
   font-weight: 400;
   font-size: 20px;
@@ -86,6 +85,16 @@ section p {
 .breakage {
   width: 100%;
   padding: 24px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.section-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 24px;
+  align-content: space-between;
 }
 
 .skillset-1 {
@@ -101,7 +110,8 @@ section p {
 .skillset-2 {
   display: flex;
   align-items: flex-start;
-  padding-right: 200px;
+  padding-right: 210px;
+  line-height: 24px;
 }
 
 #languages-header {
@@ -125,4 +135,295 @@ li {
   display: flex;
   flex-wrap: wrap;
   align-content: space-between;
+}
+
+.section-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  width: 200px;
+  height: 104px;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.card .card-img {
+  width: 100%;
+  height: 40px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.github img {
+  width: 18px;
+  height: 20px;
+}
+
+.work-card img {
+  width: 77px;
+  height: 40px;
+}
+
+.linkedin img {
+  width: 18px;
+  height: 20px;
+}
+
+.two-fingers img {
+  width: 14.7px;
+  height: 20px;
+}
+
+.twitter img {
+  width: 20px;
+  height: 20px;
+}
+
+.medium img {
+  width: 20px;
+  height: 20px;
+}
+
+.arrow-card {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-content: center;
+}
+
+.arrow img {
+  height: 18px;
+  width: 21px;
+}
+
+.arrow-card span {
+  color: #a2a3ae;
+}
+
+.my-recent-work {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  height: 145px;
+  width: 327px;
+  display: flex;
+  flex-direction: column;
+}
+
+.my-recent-work h4 {
+  color: #9490ff;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 52px;
+  text-align: left;
+}
+
+.my-recent-work .breakage {
+  width: 100%;
+  height: 17px;
+}
+
+.section-4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+}
+
+.project {
+  align-items: center;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 395px;
+  height: auto;
+  grid-gap: 10px;
+  padding: 24px;
+}
+
+.project > div {
+  height: auto;
+  width: 100%;
+}
+
+.featured-project {
+  display: flex;
+  flex-direction: column;
+}
+
+.recipe-card {
+  width: 100%;
+  height: 236px;
+  padding-bottom: 10px;
+}
+
+.recipe-card img {
+  width: 100%;
+  height: 100%;
+}
+
+.details-card {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+  justify-content: left;
+  height: 100%;
+}
+
+.project-header {
+  padding: 10px;
+  line-height: 44px;
+  width: 327px;
+  height: 105px;
+  font-weight: 500px;
+}
+
+.details-card h4 {
+  color: #fff;
+  font-size: 32px;
+}
+
+.project-body {
+  width: 100%;
+  height: 100%;
+  color: #dcdce8;
+  font-size: 20px;
+  font-weight: 400px;
+  line-height: 28px;
+  vertical-align: top;
+  padding-bottom: 10px;
+}
+
+.programming-languages {
+  padding-bottom: 20px;
+  padding-top: 20px;
+  justify-content: center;
+  align-content: center;
+  gap: 8px;
+}
+
+.programming-languages ul li {
+  list-style: none;
+  display: inline-block;
+  border-right: 1px solid #a2a3ae;
+  padding: 10px;
+  line-height: 20px;
+  font-size: 15px;
+}
+
+.programming-languages .ruby {
+  border-right: none;
+}
+
+.see-project {
+  height: 48px;
+  width: 89px;
+  background-color: #7d73fc;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.see-project span {
+  font-size: 12px;
+  font-weight: 500px;
+  line-height: 24px;
+  color: #edecff;
+}
+
+.section-5 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 24px;
+}
+
+.contact-us-board {
+  display: flex;
+  flex-direction: column;
+  width: 327px;
+  height: 164;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.contact-us-header {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 44px;
+  text-align: center;
+  color: #9390ff;
+}
+
+.contact-us-body {
+  padding-top: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #f5f5ff;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+footer .footer-card .card-img {
+  height: 40px;
+  display: grid;
+  padding-left: 30px;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+footer .linkedin img {
+  width: 18px;
+  height: 20px;
+}
+
+footer .two-fingers img {
+  width: 14.7px;
+  height: 20px;
+}
+
+footer .twitter img {
+  width: 20px;
+  height: 20px;
+}
+
+footer .medium img {
+  width: 20px;
+  height: 20px;
+}
+
+.footer-email {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  width: 221px;
+  height: 29px;
+}
+
+.footer-email span {
+  font-weight: 400px;
+  font-size: 20px;
+  line-height: 28px;
+  align-items: center;
+  color: #ebebff;
 }
