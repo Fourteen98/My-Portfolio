@@ -9,10 +9,6 @@
 body {
   background-color: #191765;
   font-family: Roboto, sans-serif;
-  background-image: url("../images/Top\ circles.svg");
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: cover;
   padding-top: 50px;
   align-items: center;
 }
@@ -49,6 +45,11 @@ header nav img {
   align-items: center;
   padding-top: 24px;
   align-content: space-between;
+}
+
+.section-1 img {
+  position: absolute;
+  width: 100%;
 }
 
 .section-1 h1 {
@@ -142,6 +143,11 @@ li {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.section-3 img {
+  position: absolute;
+  width: 100%;
 }
 
 .card {
@@ -379,7 +385,6 @@ li {
 }
 
 footer {
-  border: 1px solid red;
   display: flex;
   justify-content: center;
 }
