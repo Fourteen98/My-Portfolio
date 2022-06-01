@@ -225,14 +225,13 @@
           I’d love to help with it
         </span>
       </div>
-      <form action="#" class="contact-form">
-        <label><textarea name="name" id="name" cols="40" rows="2">Enter your name</textarea></label>
-        <label><textarea name="email" id="email" cols="40" rows="2">Enter your email</textarea></label>
-        <label> <textarea name="message" id="message" cols="40" rows="10">Enter message here</textarea></label>
+      <form action="https://formspree.io/f/mpzbbnrj" class="contact-form" method="POST">
+        <input type="text" name="name" id="name" required maxlength="30" placeholder="Your Full Name">
+        <input type="email" name="email" id="email" required placeholder="Your Email Address">
+        <textarea name="message" id="form-message" cols="30" rows="10" maxlength="500"
+          required>Enter Your Message Here</textarea>
+        <button type="submit">Send</button>
       </form>
-      <div class="see-project">
-        <span>See Project</span>
-      </div>
     </div>
     <div class="breakage">
       <hr>

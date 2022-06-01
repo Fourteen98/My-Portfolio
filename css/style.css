@@ -378,6 +378,24 @@ li {
   gap: 20px;
 }
 
+button {
+  height: 48px;
+  width: 89px;
+  background-color: #7d73fc;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 500px;
+  line-height: 24px;
+  color: #edecff;
+}
+
+button:active {
+  background-color: #5e42d7;
+}
+
 footer {
   display: flex;
   justify-content: center;
