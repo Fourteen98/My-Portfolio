@@ -300,6 +300,7 @@ li {
 }
 
 .programming-languages {
+  
   padding-bottom: 20px;
   padding-top: 20px;
   justify-content: center;
@@ -309,6 +310,7 @@ li {
 
 .programming-languages ul li {
   list-style: none;
+  float: left;
   display: inline-block;
   border-right: 1px solid #a2a3ae;
   padding: 10px;
@@ -324,10 +326,11 @@ li {
   height: 48px;
   width: 89px;
   background-color: #7d73fc;
-  display: flex;
-  justify-content: center;
+  display: inline-block;
+  /* justify-content: center; */
   align-content: center;
   align-items: center;
+  float: inline-start;
 }
 
 .see-project span {
