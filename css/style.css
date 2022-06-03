@@ -30,8 +30,6 @@ header {
 
 header a {
   color: #fff;
-  height: 16px;
-  width: 200px;
   font-size: 10px;
   top: 46px;
   display: flex;
@@ -99,18 +97,15 @@ header nav img {
 
 .skillset-1 {
   display: flex;
-  flex-wrap: wrap-reverse;
   padding-top: 20px;
   justify-content: space-between;
-  align-items: stretch;
   line-height: 24px;
-  gap: 100px;
+  gap: 24px;
 }
 
 .skillset-2 {
   display: flex;
   align-items: flex-start;
-  padding-right: 210px;
   line-height: 24px;
 }
 
@@ -189,7 +184,14 @@ li {
   height: 20px;
 }
 
-.arrow-card {
+.arrow-card-2 {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-content: center;
+}
+
+.arrow-card-1 {
   display: flex;
   gap: 10px;
   justify-content: center;
@@ -201,9 +203,15 @@ li {
   width: 21px;
 }
 
-.arrow-card span {
+.arrow-card-1 span {
   color: #a2a3ae;
 }
+
+.arrow-card-2 span {
+  color: #a2a3ae;
+}
+
+
 
 .my-recent-work {
   padding-top: 40px;
@@ -212,6 +220,7 @@ li {
   width: 327px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .my-recent-work h4 {
@@ -444,4 +453,115 @@ footer .medium img {
   line-height: 28px;
   align-items: center;
   color: #ebebff;
+}
+
+.desktop {
+  display: none;
+  width: 100%;
+  /* margin-left: 300px; */
+}
+
+.desktop ul {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  justify-content: end;
+}
+
+.desktop ul img {
+  width: 22px;
+  height: 18px;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    justify-content: center;
+      padding: 0 142px;
+  }
+  .mobile {
+    display: none;
+  }
+  .desktop {
+    display: block;
+  }
+
+  .all-skills {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .all-skills .skills {
+    padding-top: 20px;
+  }
+
+  .featured-project {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  .featured-project:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
+  .featured-project .recipe-card {
+    width: 685px;
+    height: 448px;
+  }
+
+  .my-recent-work {
+    width: 100%;
+    padding: 30px 20px;
+  }
+
+  .contact-us-header span {
+    display: none;
+  }
+  .contact-us-body #mobile {
+    display: none;
+  }
+
+  .mobile-contact-us-description span {
+    color: #ebebff;
+  }
+
+  .section-1 .breakage {
+    width: 448px;
+  }
+
+  .section-2 .breakage {
+    width: 448px;
+  }
+
+  .card {
+    border: 1px solid red;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 600px;
+  }
+  .arrow-card-1 {
+    border: 1px solid red;
+  }
+
+  .arrow-card-2 {
+    border: 1px solid red;
+  }
+
+  .card-img {
+    border: 1px solid red;
+    max-width: 200px;
+  }
+}
+
+@media  screen and (max-width: 767px) {
+  .contact-us-header h4 {
+    display: none;
+  }
+
+  .arrow-card-1 {
+    display: none;
+  }
 }

@@ -19,8 +19,16 @@
     <a href="#">
       <h1>MUHYIDEEN ELIAS</h1>
     </a>
-    <nav>
+    <nav class="mobile">
       <img src="./images/menu.svg" alt="menu-icon" />
+    </nav>
+    <nav class="desktop">
+      <ul>
+        <li>Portfolio</li>
+        <li>About</li>
+        <li>Contact</li>
+        <li><img src="/images/message.svg" </li>
+      </ul>
     </nav>
   </header>
   <section class="section-1">
@@ -39,39 +47,46 @@
     </div>
   </section>
   <section class="section-2">
-    <div class="skillset-1">
-      <ul class="languages">
-        <li id="languages-header">Languages</li>
-        <li>Javascript</li>
-        <li>Ruby</li>
-        <li>Html</li>
-        <li>Css</li>
-      </ul>
-      <ul class="framework">
-        <li id="frameworks-header">Frameworks</li>
-        <li>Boostrap</li>
-        <li>Ruby on Rails</li>
-        <li>RSPec</li>
-        <li>CapyBara</li>
-        <li>Selenium</li>
-      </ul>
+    <div class="all-skills">
+      <div class="skillset-1">
+        <ul class="languages">
+          <li id="languages-header">Languages</li>
+          <li>Javascript</li>
+          <li>Ruby</li>
+          <li>Html</li>
+          <li>Css</li>
+        </ul>
+        <ul class="framework">
+          <li id="frameworks-header">Frameworks</li>
+          <li>Boostrap</li>
+          <li>Ruby on Rails</li>
+          <li>RSPec</li>
+          <li>CapyBara</li>
+          <li>Selenium</li>
+        </ul>
+      </div>
+      <div class="skillset-2">
+        <ul class="skills">
+          <li id="skill-header">Skils</li>
+          <li>Codekit</li>
+          <li>Github</li>
+          <li>Codepen</li>
+          <li>Gitlab</li>
+          <li>Terminal</li>
+        </ul>
+      </div>
     </div>
-    <div class="skillset-2">
-      <ul class="skill">
-        <li id="skill-header">Skils</li>
-        <li>Codekit</li>
-        <li>Github</li>
-        <li>Codepen</li>
-        <li>Gitlab</li>
-        <li>Terminal</li>
-      </ul>
-    </div>
+
     <div class="breakage">
       <hr>
     </div>
   </section>
   <section class="section-3">
     <div class="card">
+      <div class="arrow-card-1">
+        <div class="arrow"><img src="./images/arrow.svg" alt="work"></div>
+        <span>Work</span>
+      </div>
       <div class="card-img">
         <div class="github"><img src="./images/github.svg" alt="github"></div>
         <div class="linkedin"><img src="./images/linkedin.svg" alt="linkedin"></div>
@@ -79,7 +94,7 @@
         <div class="twitter"><img src="./images/twitter.svg" alt="twitter"></div>
         <div class="medium"><img src="./images/medium.svg" alt="medium"></div>
       </div>
-      <div class="arrow-card">
+      <div class="arrow-card-2">
         <div class="arrow"><img src="./images/arrow.svg" alt="work"></div>
         <span>Work</span>
       </div>
@@ -216,9 +231,14 @@
     <div class="contact-us-board">
       <div class="contact-us-header">
         <span>CONTACT US</span>
+        <h4>Let's chat!</h4>
       </div>
       <div class="contact-us-body">
-        <span>
+        <div class="mobile-contact-us-description">
+          <span >If you have an application you are interested in developing, a feature that you 
+            need built or a project that needs coding. I’d love to help with it</span>
+        </div>
+        <span id="mobile">
           If you have an application you are<br>
           interested in developing, a feature that you<br>
           need built or a project that needs coding.<br>
