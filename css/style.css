@@ -185,6 +185,22 @@ li {
   height: 20px;
 }
 
+.card-img:hover {
+  transform: scale(140%);
+}
+
+.card-img {
+  transition: 200ms ease-out;
+}
+
+.card-img > div{
+  transition: 200ms ease-out;
+}
+
+.card-img > div:hover {
+  transform: scale(120%);
+}
+
 .arrow-card-2 {
   display: flex;
   gap: 10px;
