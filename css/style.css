@@ -24,7 +24,7 @@ a {
 header {
   display: flex;
   justify-content: space-between;
-  padding: 20px 30px;
+  padding: 20px 24px;
   align-items: center;
 }
 
@@ -45,8 +45,8 @@ header nav img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 24px;
   align-content: space-between;
+  padding: 24px 24px 0 24px;
 }
 
 .section-1 h1 {
@@ -91,8 +91,8 @@ header nav img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 24px;
   align-content: space-between;
+  padding: 24px 24px 0 24px;
 }
 
 .skillset-1 {
@@ -137,6 +137,7 @@ li {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 0 24px;
 }
 
 .card {
@@ -240,6 +241,7 @@ li {
   align-items: center;
   justify-content: center;
   height: auto;
+  padding: 0 24px;
 }
 
 .project {
