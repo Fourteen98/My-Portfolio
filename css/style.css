@@ -544,22 +544,10 @@ footer .medium img {
   .card-img {
     max-width: 200px;
   }
-
-  .contact-form #name {
-    display: none;
-  }
-
-  .contact-form .desktop {
-    display: inline-block;
-  }
 }
 
 @media screen and (max-width: 767px) {
   .contact-us-header h4 {
-    display: none;
-  }
-
-  .contact-form .desktop {
     display: none;
   }
 
