@@ -535,24 +535,24 @@ footer .medium img {
   }
 
   .card {
-    border: 1px solid red;
     flex-direction: row;
     width: 100%;
     justify-content: center;
     align-items: center;
     gap: 600px;
   }
-  .arrow-card-1 {
-    border: 1px solid red;
-  }
-
-  .arrow-card-2 {
-    border: 1px solid red;
-  }
 
   .card-img {
-    border: 1px solid red;
     max-width: 200px;
+  }
+
+  .contact-form #name {
+    display: none;
+  }
+
+  .contact-form .desktop {
+
+    display: inline-block;
   }
 }
 
@@ -561,6 +561,9 @@ footer .medium img {
     display: none;
   }
 
+  .contact-form .desktop  {
+    display: none;
+  }
   .arrow-card-1 {
     display: none;
   }
