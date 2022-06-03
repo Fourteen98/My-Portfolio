@@ -414,6 +414,7 @@ button {
   line-height: 24px;
   color: #edecff;
   border: none;
+  transition: 500ms ease-out;
 }
 
 button:active {
@@ -422,6 +423,8 @@ button:active {
 
 button:hover {
   box-shadow: 0 8px 16px 0 #7d73fc7a;
+  width: 92px;
+  height: 52px;
 }
 
 footer {
