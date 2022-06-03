@@ -383,6 +383,17 @@ li {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+form input {
+  padding: 12px;
+  width: 100%;
+}
+
+form textarea {
+  padding: 12px;
 }
 
 button {
@@ -397,10 +408,15 @@ button {
   font-weight: 500px;
   line-height: 24px;
   color: #edecff;
+  border: none;
 }
 
 button:active {
   background-color: #5e42d7;
+}
+
+button:hover {
+  box-shadow: 0 8px 16px 0 #7d73fc7a;
 }
 
 footer {
