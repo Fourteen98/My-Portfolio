@@ -341,6 +341,7 @@ li {
   font-size: 15px;
   transition: 500ms ease-out;
 }
+
 .programming-languages ul li:hover {
   font-weight: 600;
 }
