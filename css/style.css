@@ -360,7 +360,7 @@ li {
   align-items: center;
 }
 
-.see-project span {
+.see-project a {
   font-size: 12px;
   font-weight: 500px;
   line-height: 24px;
