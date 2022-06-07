@@ -13,6 +13,9 @@
 
 ## Getting Started
 
+### Click link below for a live demo
+[Demo Link](https://fourteen98.github.io/My-Portfolio/)
+
 **Follow instruction at the RUN section to run the project.**
 
 ### RUN Project
