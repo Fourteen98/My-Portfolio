@@ -353,7 +353,7 @@ li {
 .see-project {
   height: 48px;
   width: 89px;
-  background-color: #7d73fc;
+  background-color: #4d45be;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -364,7 +364,7 @@ li {
   font-size: 12px;
   font-weight: 500px;
   line-height: 24px;
-  color: #edecff;
+  color: #fff;
 }
 
 .section-5 {
@@ -425,7 +425,7 @@ form textarea {
 button {
   height: 48px;
   width: 89px;
-  background-color: #7d73fc;
+  background-color: #4d45be;
   display: flex;
   justify-content: center;
   align-content: center;
