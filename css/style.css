@@ -243,7 +243,7 @@ li {
   justify-content: center;
 }
 
-.my-recent-work h4 {
+.my-recent-work h2 {
   color: #9490ff;
   font-size: 40px;
   font-weight: 500;
@@ -308,7 +308,7 @@ li {
   font-weight: 500px;
 }
 
-.details-card h4 {
+.details-card h3 {
   color: #fff;
   font-size: 32px;
 }
@@ -610,7 +610,7 @@ footer .medium img {
 
 /* media queries for mobile screen */
 @media screen and (max-width: 767px) {
-  .contact-us-header h4 {
+  .contact-us-header h3 {
     display: none;
   }
 
