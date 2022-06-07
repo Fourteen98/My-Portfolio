@@ -194,7 +194,7 @@ li {
   width: 100%;
 }
 
-.card-img > div {
+.card-img > a {
   transition: 200ms ease-out;
 }
 
