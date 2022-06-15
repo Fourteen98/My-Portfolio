@@ -41,7 +41,7 @@ header nav img {
   height: 66px;
 }
 
-.section-1 {
+.about-me {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -49,7 +49,7 @@ header nav img {
   padding: 24px 24px 0 24px;
 }
 
-.section-1 h1 {
+.about-me h1 {
   padding-top: 30px;
   padding-bottom: 30px;
   font-size: 48px;
@@ -60,7 +60,7 @@ header nav img {
   letter-spacing: 0.37px;
 }
 
-.section-1 span {
+.about-me span {
   font-weight: 500;
   font-size: 32px;
   line-height: 44px;
@@ -68,7 +68,7 @@ header nav img {
   color: #edecff;
 }
 
-.section-1 p {
+.about-me p {
   padding-top: 30px;
   font-weight: 400;
   font-size: 20px;
@@ -87,7 +87,7 @@ header nav img {
   padding-bottom: 40px;
 }
 
-.section-2 {
+.my-skils {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -132,7 +132,7 @@ li {
   align-content: space-between;
 }
 
-.section-3 {
+.work {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -256,7 +256,7 @@ li {
   height: 17px;
 }
 
-.section-4 {
+.recent-works {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -332,7 +332,7 @@ li {
   gap: 8px;
 }
 
-.programming-languages ul li {
+.project-body .programming-languages ul li {
   list-style: none;
   display: inline-block;
   border-right: 1px solid #a2a3ae;
@@ -342,7 +342,7 @@ li {
   transition: 500ms ease-out;
 }
 
-.programming-languages ul li:hover {
+.project-body .programming-languages ul li:hover {
   font-weight: 600;
 }
 
@@ -367,7 +367,7 @@ li {
   color: #fff;
 }
 
-.section-5 {
+.message-us {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -530,7 +530,18 @@ footer .medium img {
   }
 
   .desktop {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .desktop li a {
+    font-size: 18px;
+  }
+
+  .x-icon {
+    display: none;
   }
 
   .all-skills {
@@ -587,11 +598,11 @@ footer .medium img {
     height: 136px;
   }
 
-  .section-1 .breakage {
+  .about-me .breakage {
     width: 448px;
   }
 
-  .section-2 .breakage {
+  .my-skils .breakage {
     width: 448px;
   }
 
@@ -610,6 +621,47 @@ footer .medium img {
 
 /* media queries for mobile screen */
 @media screen and (max-width: 767px) {
+  .desktop {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    background-color: #191765;
+    width: 100%;
+    height: 100vh;
+    gap: 40px;
+    justify-content: start;
+    padding: 108px 28px 0 28px;
+    left: 100%;
+    top: 0;
+    border-bottom-left-radius: 40px;
+    transition: 0.5s;
+  }
+
+  .desktop li a {
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .desktop li img {
+    display: none;
+  }
+
+  .desktop li a:active {
+    color: #7D73FC;
+  }
+
+  .desktop.active {
+    left: 0;
+  }
+
+  .x-icon {
+    position: absolute;
+    top: 1%;
+    right: 15%;
+    cursor: pointer;
+  }
   .contact-us-header h3 {
     display: none;
   }
@@ -622,3 +674,66 @@ footer .medium img {
     display: none;
   }
 }
+
+/* .mobile-nav-bar {
+  background-image: url("/Normal\ Button/te");
+  background-color: #191765;
+  width: 100%;
+  height: 100vh;
+  border: 1px solid red;
+  top: 0;
+  left: 0;
+  position: fixed;
+ display: none; 
+} */
+
+/* .left-canvas {
+  position: absolute;
+  width: 226px;
+  height: 427px;
+  left: 42.04px;
+  top: 92px;
+  background: rgba(237, 236, 255, 0.4);
+  filter: blur(50px);
+  transform: rotate(25.09deg);
+} */
+
+/* .mobile-menu-card {
+  padding: 24px 24px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  gap: 50px;
+} */
+
+/* .cancel {
+  display: flex;
+  justify-content: flex-end;
+} */
+/* 
+.mobile-nav-bar .mobile-menu ul {
+  line-height: 80px;
+} */
+/* 
+.mobile-nav-bar .mobile-menu #list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+} */
+/* 
+.mobile-nav-bar .mobile-menu ul li a {
+  color: #edecff;
+  font-size: 24px;
+} */
+
+/* .right-canvas {
+  position: absolute;
+  width: 420.13px;
+  height: 244.06px;
+  left: 318.94px;
+  top: 432.54px;
+  background: rgba(237, 236, 255, 0.9);
+  filter: blur(50px);
+  transform: rotate(40.52deg);
+} */

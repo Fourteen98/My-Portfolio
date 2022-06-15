@@ -24,17 +24,17 @@ git clone https://github.com/Fourteen98/My-Portfolio.git
 ```
 #### - Open project directory and open index.html file with your prefered browser
 ####  - screenshot based on 443px screen size per specification giving in project.
-##### Section 1
+##### about me
 ![Screenshot](screenshot-1.png)
-##### Section 2 and 3
+##### my-skills
 ![Screenshot](screenshot-2.png)
 
-##### Section 3
+##### work
 ![Screenshot](screenshot-3.png)
 ![Screenshot](screenshot-4.png)
 ![Screenshot](screenshot-5.png)
 
-##### Section 4
+##### recent-works
 ![Screenshot](screenshot-6.png)
 ## Authors
 
