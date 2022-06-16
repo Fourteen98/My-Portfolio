@@ -1,9 +1,10 @@
+// Targetting  body tag
+const body = document.querySelector('body');
 const close = document.querySelector('.x-icon');
 const closePortfolio = document.querySelector('.portfolio');
 const closeAbout = document.querySelector('.about');
 const closeContact = document.querySelector('.contact');
 const button = document.querySelector('.menu');
-const body = document.querySelector('body');
 const menu = document.querySelector('.desktop');
 
 close.addEventListener('click', () => {
@@ -42,9 +43,11 @@ seeProject.forEach((project) => {
   project.addEventListener('click', (e) => {
     e.preventDefault();
     popupContainer.classList.add('display-active');
+    body.style.overflowY = 'hidden';
   });
 });
 
 closePopupBtn.addEventListener('click', () => {
   popupContainer.classList.remove('display-active');
+  body.style.overflowY = 'visible';
 });
