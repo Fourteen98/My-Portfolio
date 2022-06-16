@@ -87,7 +87,7 @@ header nav img {
   padding-bottom: 40px;
 }
 
-.my-skils {
+.my-skills {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -134,7 +134,7 @@ li {
 
 /* Work Section */
 
-.work {
+.my-portfolio {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -142,7 +142,7 @@ li {
   padding: 0 24px;
 }
 
-.work .card {
+.my-portfolio .card {
   display: flex;
   width: 200px;
   height: 104px;
