@@ -41,7 +41,7 @@ header nav img {
   height: 66px;
 }
 
-.section-1 {
+.about-me {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -49,7 +49,7 @@ header nav img {
   padding: 24px 24px 0 24px;
 }
 
-.section-1 h1 {
+.about-me h1 {
   padding-top: 30px;
   padding-bottom: 30px;
   font-size: 48px;
@@ -60,7 +60,7 @@ header nav img {
   letter-spacing: 0.37px;
 }
 
-.section-1 span {
+.about-me span {
   font-weight: 500;
   font-size: 32px;
   line-height: 44px;
@@ -68,7 +68,7 @@ header nav img {
   color: #edecff;
 }
 
-.section-1 p {
+.about-me p {
   padding-top: 30px;
   font-weight: 400;
   font-size: 20px;
@@ -87,7 +87,7 @@ header nav img {
   padding-bottom: 40px;
 }
 
-.section-2 {
+.my-skills {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -132,7 +132,9 @@ li {
   align-content: space-between;
 }
 
-.section-3 {
+/* Work Section */
+
+.my-portfolio {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -140,7 +142,7 @@ li {
   padding: 0 24px;
 }
 
-.card {
+.my-portfolio .card {
   display: flex;
   width: 200px;
   height: 104px;
@@ -148,25 +150,19 @@ li {
   gap: 30px;
 }
 
-.card-img {
-  transition: 200ms ease-out;
-}
-
 .card .card-img {
   width: 100%;
   height: 40px;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(6, 1fr);
+  align-items: center;
+  justify-content: center;
+  transition: 200ms ease-out;
 }
 
 .github img {
   width: 18px;
   height: 20px;
-}
-
-.work-card img {
-  width: 77px;
-  height: 40px;
 }
 
 .linkedin img {
@@ -175,7 +171,7 @@ li {
 }
 
 .two-fingers img {
-  width: 14.7px;
+  width: 20px;
   height: 20px;
 }
 
@@ -256,7 +252,7 @@ li {
   height: 17px;
 }
 
-.section-4 {
+.recent-works {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -332,7 +328,7 @@ li {
   gap: 8px;
 }
 
-.programming-languages ul li {
+.project-body .programming-languages ul li {
   list-style: none;
   display: inline-block;
   border-right: 1px solid #a2a3ae;
@@ -342,7 +338,7 @@ li {
   transition: 500ms ease-out;
 }
 
-.programming-languages ul li:hover {
+.project-body .programming-languages ul li:hover {
   font-weight: 600;
 }
 
@@ -367,7 +363,7 @@ li {
   color: #fff;
 }
 
-.section-5 {
+.message-us {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -530,7 +526,27 @@ footer .medium img {
   }
 
   .desktop {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .desktop li a {
+    font-size: 18px;
+  }
+
+  .desktop li img {
+    width: 22px;
+    height: 18px;
+  }
+
+  .desktop .left-arrow {
+    display: none;
+  }
+
+  .x-icon {
+    display: none;
   }
 
   .all-skills {
@@ -587,11 +603,11 @@ footer .medium img {
     height: 136px;
   }
 
-  .section-1 .breakage {
+  .about-me .breakage {
     width: 448px;
   }
 
-  .section-2 .breakage {
+  .my-skils .breakage {
     width: 448px;
   }
 
@@ -610,6 +626,49 @@ footer .medium img {
 
 /* media queries for mobile screen */
 @media screen and (max-width: 767px) {
+  .desktop {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    background-color: #191765;
+    width: 100%;
+    height: 100vh;
+    gap: 40px;
+    justify-content: start;
+    padding: 108px 28px 0 28px;
+    left: 100%;
+    top: 0;
+    border-bottom-left-radius: 40px;
+    transition: 0.5s;
+  }
+
+  .desktop li a {
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .desktop li img {
+    display: none;
+  }
+
+  .desktop li a:active {
+    color: #7d73fc;
+  }
+
+  .desktop.active {
+    left: 0;
+  }
+
+  .x-icon {
+    padding-top: 30px;
+    position: absolute;
+    top: 1%;
+    right: 6%;
+    cursor: pointer;
+  }
+
   .contact-us-header h3 {
     display: none;
   }
