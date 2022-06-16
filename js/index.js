@@ -30,3 +30,21 @@ button.addEventListener('click', () => {
   menu.classList.toggle('active');
   body.classList.toggle('active');
 });
+
+// Targetting see-project buttom
+const seeProject = document.querySelectorAll('.toggle-popup');
+// Targetting modal
+const popupContainer = document.querySelector('.project-pop-up');
+// Targetting close button
+const closePopupBtn = document.querySelector('.close-modal');
+// showing popup modal
+seeProject.forEach((project) => {
+  project.addEventListener('click', (e) => {
+    e.preventDefault();
+    popupContainer.classList.add('display-active');
+  });
+});
+
+closePopupBtn.addEventListener('click', () => {
+  popupContainer.classList.remove('display-active');
+});
