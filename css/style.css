@@ -9,7 +9,6 @@
 body {
   background-color: #191765;
   font-family: Roboto, sans-serif;
-  padding-top: 50px;
   align-items: center;
   background-image: url("../images/big_bg.svg");
   background-repeat: no-repeat;
@@ -705,6 +704,7 @@ footer .medium img {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 @media screen and (min-width: 767px) {
   .project-pop-up {
     padding: 5% 5%;
@@ -718,6 +718,7 @@ footer .medium img {
     background-repeat: no-repeat;
     background-size: cover;
   }
+
   .popup-container {
     width: 60%;
     background: rgba(255, 255, 255, 0.16);
