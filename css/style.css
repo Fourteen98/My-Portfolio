@@ -338,10 +338,6 @@ li {
   transition: 500ms ease-out;
 }
 
-.project-body .programming-languages ul li:hover {
-  font-weight: 600;
-}
-
 .programming-languages .ruby {
   border-right: none;
 }
@@ -690,17 +686,17 @@ footer .medium img {
   left: 0;
   right: 0;
   display: none;
-  background-image: url('/images/project-popup-bg.svg');
+  background-image: url("/images/project-popup-bg.svg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .popup-container {
   width: 100%;
-  height: 100%;
+  height: auto;
   background: rgba(255, 255, 255, 0.16);
-  border: 1px solid #ffffff;
-  box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
+  border: 1px solid #fff;
+  box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
   padding: 24px 24px;
 }
 
@@ -723,4 +719,88 @@ footer .medium img {
 
 .display-active {
   display: flex;
+}
+
+.pop-project-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  height: auto;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.pop-project-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  color: #dcdce8;
+  font-size: 20px;
+  font-weight: 400px;
+  line-height: 28px;
+  vertical-align: top;
+  padding-bottom: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.popup-container .pop-project-content ul li {
+  list-style: none;
+  display: inline-block;
+  border-right: 1px solid #a2a3ae;
+  padding: 10px;
+  line-height: 20px;
+  font-size: 15px;
+  transition: 500ms ease-out;
+}
+
+.programming-languages ul li:hover {
+  font-weight: 600;
+}
+
+.popup-btn {
+  gap: 10px;
+}
+
+.popup-btn-sm {
+  height: 48px;
+  width: 103px;
+  background-color: #7d73fc;
+  color: #edecff;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-size: 12px;
+  gap: 10px;
+}
+
+.popup-btn-lg {
+  height: 48px;
+  width: 124px;
+  background-color: #7d73fc;
+  color: #edecff;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  display: flex;
+  font-size: 12px;
+  gap: 10px;
+  border: none;
+  transition: 500ms ease-out;
+}
+
+.popup-btn-lg:hover {
+  box-shadow: 0 8px 16px 0 #7d73fc7a;
+  width: 92px;
+  height: 52px;
+}
+
+.popup-btn-sm:hover {
+  box-shadow: 0 8px 16px 0 #7d73fc7a;
+  width: 92px;
+  height: 52px;
 }
