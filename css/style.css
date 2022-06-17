@@ -15,6 +15,7 @@ body {
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
+  padding: 24px;
 }
 
 a {
@@ -24,7 +25,7 @@ a {
 header {
   display: flex;
   justify-content: space-between;
-  padding: 20px 24px;
+  padding: 20px;
   align-items: center;
 }
 
@@ -46,7 +47,6 @@ header nav img {
   flex-direction: column;
   align-items: center;
   align-content: space-between;
-  padding: 24px 24px 0 24px;
 }
 
 .about-me h1 {
@@ -73,7 +73,6 @@ header nav img {
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
-  width: 327px;
   color: #c8c8d4;
   text-align: center;
   padding-bottom: 20px;
@@ -82,7 +81,6 @@ header nav img {
 
 .breakage {
   width: 100%;
-  padding: 24px;
   padding-top: 40px;
   padding-bottom: 40px;
 }
@@ -92,7 +90,6 @@ header nav img {
   flex-direction: column;
   align-items: center;
   align-content: space-between;
-  padding: 24px 24px 0 24px;
 }
 
 .skillset-1 {
@@ -139,7 +136,6 @@ li {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0 24px;
 }
 
 .my-portfolio .card {
@@ -233,7 +229,7 @@ li {
   padding-top: 40px;
   padding-bottom: 40px;
   height: 145px;
-  width: 327px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -258,7 +254,6 @@ li {
   align-items: center;
   justify-content: center;
   height: auto;
-  padding: 0 24px;
 }
 
 .project {
@@ -266,10 +261,9 @@ li {
   justify-content: center;
   display: grid;
   grid-template-columns: 1fr;
-  width: 395px;
+  width: 100%;
   height: auto;
   grid-gap: 10px;
-  padding: 24px;
 }
 
 .featured-project {
@@ -299,7 +293,7 @@ li {
 .project-header {
   padding: 10px;
   line-height: 44px;
-  width: 327px;
+  width: 100%;
   height: 105px;
   font-weight: 500px;
 }
@@ -318,11 +312,13 @@ li {
   line-height: 28px;
   vertical-align: top;
   padding-bottom: 10px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 .programming-languages {
-  padding-bottom: 20px;
-  padding-top: 20px;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
   justify-content: center;
   align-content: center;
   gap: 8px;
@@ -363,7 +359,6 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 24px;
 }
 
 .contact-us-board {
@@ -374,7 +369,6 @@ li {
   justify-content: center;
   align-items: center;
   gap: 20px;
-  padding: 0 24px;
 }
 
 .contact-us-header {
@@ -701,7 +695,7 @@ footer .medium img {
 
 .project-pop-up {
   padding: 5% 5%;
-  height: 100vh;
+  min-height: 100%;
   position: fixed;
   top: 0;
   left: 0;
@@ -711,26 +705,39 @@ footer .medium img {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
-.popup-container {
-  width: 100%;
-  height: 100vh;
-  background: rgba(255, 255, 255, 0.16);
-  border: 1px solid #fff;
-  box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
-  padding: 24px 24px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+@media screen and (min-width: 767px) {
+  .project-pop-up {
+    padding: 5% 5%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    background-image: url("/images/project-popup-bg.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .popup-container {
+    width: 60%;
+    background: rgba(255, 255, 255, 0.16);
+    border: 1px solid #fff;
+    box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+    padding-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
 }
 
 .popup-head {
   display: flex;
   justify-content: space-between;
+  min-height: 5%;
+  padding: 0 5%;
 }
 
 .popup-head-text {
-  height: 58px;
   color: #fff;
   display: flex;
   align-items: center;
@@ -743,29 +750,29 @@ footer .medium img {
 
 .display-active {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.pop-project-body {
+.popup-project-body {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 20px;
-  padding: 24px;
 }
 
-.pop-project-image {
+.popup-project-image {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px;
   width: 100%;
-  height: 300px;
+  height: 45%;
 }
 
 #generic-project-desktop {
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  min-height: 20%;
 }
 
 .pop-project-content {

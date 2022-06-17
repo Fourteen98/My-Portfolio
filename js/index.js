@@ -43,11 +43,11 @@ seeProject.forEach((project) => {
   project.addEventListener('click', (e) => {
     e.preventDefault();
     popupContainer.classList.add('display-active');
-    body.style.overflowY = 'hidden';
+    // body.style.overflowY = 'hidden';
   });
 });
 
 closePopupBtn.addEventListener('click', () => {
   popupContainer.classList.remove('display-active');
-  body.style.overflowY = 'visible';
+  // body.style.overflowY = 'visible';
 });
