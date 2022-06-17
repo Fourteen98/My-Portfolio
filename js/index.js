@@ -51,3 +51,21 @@ closePopupBtn.addEventListener('click', () => {
   popupContainer.classList.remove('display-active');
   // body.style.overflowY = 'visible';
 });
+
+const email = document.getElementById('email');
+const form = document.getElementById('form');
+const errorMessage = document.getElementById('error-message');
+
+form.addEventListener('submit', (e) => {
+  const messages = [];
+  if (/[A-Z]/.test(email.value) === true) {
+    messages.push('Email must be in lowercase!');
+    errorMessage.innerText = messages.join(', ');
+    e.preventDefault();
+  }
+  if (email.value === '' || email.value === null) {
+    messages.push('Email field can not be empty!');
+    errorMessage.innerText = messages.join(', ');
+    e.preventDefault();
+  }
+});
