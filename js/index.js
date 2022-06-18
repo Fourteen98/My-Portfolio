@@ -53,7 +53,7 @@ closePopupBtn.addEventListener('click', () => {
 });
 
 const email = document.getElementById('email');
-const form = document.getElementById('form');
+const form = document.querySelector('.contact-form');
 const errorMessage = document.getElementById('error-message');
 
 form.addEventListener('submit', (e) => {
