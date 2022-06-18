@@ -71,3 +71,30 @@ form.addEventListener('submit', (e) => {
     e.preventDefault();
   }
 });
+
+const nameForm = document.getElementById('name');
+const emailForm = document.getElementById('email');
+const messageForm = document.getElementById('message');
+
+function handleChange() {
+  const formData = {
+    fullName: nameForm.value,
+    emailForm: emailForm.value,
+    message: messageForm.value,
+  };
+  localStorage.setItem('form', JSON.stringify(formData));
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  const getFormValue = localStorage.getItem('form');
+  if (getFormValue) {
+    const formObject = JSON.parse(getFormValue);
+    nameForm.value = formObject.fullName;
+    emailForm.value = formObject.emailForm;
+    messageForm.value = formObject.message;
+  }
+});
+
+nameForm.onkeyup = handleChange;
+emailForm.onkeyup = handleChange;
+messageForm.onkeyup = handleChange;
