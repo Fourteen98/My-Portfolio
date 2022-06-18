@@ -74,7 +74,7 @@ form.addEventListener('submit', (e) => {
   }
 });
 
-// Preserve data
+// Preserve form data on local storage
 const formData = {
   name: '',
   email: '',
@@ -82,27 +82,29 @@ const formData = {
 };
 
 function setData() {
-  const formEntry = JSON.parse(localStorage.getItem('formData'));
-  formData.name = formEntry.value;
-  formData.email = formEntry.value;
-  formData.message = formEntry.value;
+  const dataEntry = JSON.parse(localStorage.getItem('dataForm'));
+  formName.value = dataEntry.name;
+  formEmail.value = dataEntry.email;
+  formMessage.value = dataEntry.text;
 }
 
-function getData() {
+function saveData() {
   formData.name = formName.value;
   formData.email = formEmail.value;
-  formData.message = formMessage.value;
-  const toString = JSON.stringify(formData);
-  localStorage.setItem('formData', toString);
+  formData.text = formMessage.value;
+
+  const toStringData = JSON.stringify(formData);
+  localStorage.setItem('formData', toStringData);
+
   setData();
 }
 
 if (!localStorage.getItem('formData')) {
-  getData();
+  saveData();
 } else {
   setData();
 }
 
-formName.onchange = getData();
-formEmail.onchange = getData();
-formMessage.onchange = getData();
+formName.onchange = saveData;
+formEmail.onchange = saveData;
+formMessage.onchange = saveData;
