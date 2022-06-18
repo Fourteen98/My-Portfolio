@@ -52,22 +52,57 @@ closePopupBtn.addEventListener('click', () => {
   // body.style.overflowY = 'visible';
 });
 
-const email = document.getElementById('email');
 const form = document.querySelector('.contact-form');
+const formName = document.getElementById('name');
+const formEmail = document.getElementById('email');
+const formMessage = document.getElementById('message');
 const errorMessage = document.getElementById('error-message');
 
 form.addEventListener('submit', (e) => {
   const messages = [];
   const isUpperCase = (string) => /[A-Z]/.test(string);
 
-  if (isUpperCase(email.value) === true) {
+  if (isUpperCase(formEmail.value) === true) {
     messages.push('Email must be in lowercase!');
     errorMessage.innerText = messages.join(', ');
     e.preventDefault();
   }
-  if (email.value === '' || email.value === null) {
+  if (formEmail.value === '' || formEmail.value === null) {
     messages.push('Email field can not be empty!');
     errorMessage.innerText = messages.join(', ');
     e.preventDefault();
   }
 });
+
+// Preserve data
+const formData = {
+  name: '',
+  email: '',
+  text: '',
+};
+
+function setData() {
+  const formEntry = JSON.parse(localStorage.getItem('formData'));
+  formData.name = formEntry.value;
+  formData.email = formEntry.value;
+  formData.message = formEntry.value;
+}
+
+function getData() {
+  formData.name = formName.value;
+  formData.email = formEmail.value;
+  formData.message = formMessage.value;
+  const toString = JSON.stringify(formData);
+  localStorage.setItem('formData', toString);
+  setData();
+}
+
+if (!localStorage.getItem('formData')) {
+  getData();
+} else {
+  setData();
+}
+
+formName.onchange = getData();
+formEmail.onchange = getData();
+formMessage.onchange = getData();
