@@ -54,7 +54,7 @@ closePopupBtn.addEventListener('click', () => {
 
 const form = document.querySelector('.contact-form');
 const formName = document.getElementById('name');
-const formEmail = document.getElementById('email');
+const formEmail = document.getElementById('formEmail');
 const formMessage = document.getElementById('message');
 const errorMessage = document.getElementById('error-message');
 
@@ -74,37 +74,23 @@ form.addEventListener('submit', (e) => {
   }
 });
 
-// Preserve form data on local storage
-const formData = {
-  name: '',
+// Local storage functionality
+let formData = {
+  full_name: '',
   email: '',
-  text: '',
+  message: '',
 };
 
-function setData() {
-  const dataEntry = JSON.parse(localStorage.getItem('dataForm'));
-  formName.value = dataEntry.name;
-  formEmail.value = dataEntry.email;
-  formMessage.value = dataEntry.text;
+if (localStorage.getItem('formData') !== null) {
+  const data = localStorage.getItem('formData');
+  formData = JSON.parse(data);
 }
 
-function saveData() {
-  formData.name = formName.value;
-  formData.email = formEmail.value;
-  formData.text = formMessage.value;
-
-  const toStringData = JSON.stringify(formData);
-  localStorage.setItem('formData', toStringData);
-
-  setData();
-}
-
-if (!localStorage.getItem('formData')) {
-  saveData();
-} else {
-  setData();
-}
-
-formName.onchange = saveData;
-formEmail.onchange = saveData;
-formMessage.onchange = saveData;
+const formElements = document.querySelectorAll('input, textarea');
+formElements.forEach((element) => {
+  element.value = formData[element.name];
+  element.addEventListener('input', (e) => {
+    formData[e.target.name] = e.target.value;
+    localStorage.setItem('formData', JSON.stringify(formData));
+  });
+});
