@@ -53,9 +53,7 @@ closePopupBtn.addEventListener('click', () => {
 });
 
 const form = document.querySelector('.contact-form');
-const formName = document.getElementById('name');
 const formEmail = document.getElementById('formEmail');
-const formMessage = document.getElementById('message');
 const errorMessage = document.getElementById('error-message');
 
 form.addEventListener('submit', (e) => {
