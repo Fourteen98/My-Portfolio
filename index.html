@@ -251,9 +251,9 @@
         </span>
       </div>
       <form action="https://formspree.io/f/mpzbbnrj" id="form" class="contact-form" method="POST">
-        <input type="text" name="name" id="name" required maxlength="30" placeholder="Your Full Name">
-        <input type="email" name="email" id="email" required placeholder="Your Email Address">
-        <textarea name="message" id="message" cols="30" rows="10" maxlength="500" required
+        <input onkeyup="handleChange()" type="text" name="name" id="name" required maxlength="30" placeholder="Your Full Name">
+        <input onkeyup="handleChange()"  type="email" name="email" id="email" required placeholder="Your Email Address">
+        <textarea onkeyup="handleChange()" name="message" id="message" cols="30" rows="10" maxlength="500" required
           placeholder="Enter Your Message Here"></textarea>
         <button type="submit">Send</button>
         <small id="error-message"></small>

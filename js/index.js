@@ -72,22 +72,29 @@ form.addEventListener('submit', (e) => {
   }
 });
 
-let formData = {
-  name: '',
-  email: '',
-  message: '',
-};
+const nameForm = document.getElementById('name');
+const emailForm = document.getElementById('email');
+const messageForm = document.getElementById('message');
 
-if (localStorage.getItem('formData') !== null) {
-  const data = localStorage.getItem('formData');
-  formData = JSON.parse(data);
+function handleChange() {
+  const formData = {
+    fullName: nameForm.value,
+    emailForm: emailForm.value,
+    message: messageForm.value,
+  };
+  localStorage.setItem('form', JSON.stringify(formData));
 }
 
-const formElements = document.querySelectorAll('input', 'area');
-formElements.forEach((element) => {
-  element.value = formData[element.name];
-  element.addEventListener('input', (e) => {
-    formData[e.target.name] = e.target.value;
-    localStorage.setItem('formData', JSON.stringify(formData));
-  });
+document.addEventListener('DOMContentLoaded', () => {
+  const getFormValue = localStorage.getItem('form');
+  if (getFormValue) {
+    const formObject = JSON.parse(getFormValue);
+    nameForm.value = formObject.fullName;
+    emailForm.value = formObject.emailForm;
+    messageForm.value = formObject.message;
+  }
 });
+
+nameForm.onkeyup = handleChange;
+emailForm.onkeyup = handleChange;
+messageForm.onkeyup = handleChange;
