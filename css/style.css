@@ -841,3 +841,20 @@ footer .medium img {
   width: 92px;
   height: 52px;
 }
+
+.button-errormessage {
+  display: flex;
+  justify-content: space-between;
+}
+
+small {
+  color: #f00;
+  align-self: center;
+  font-weight: 600;
+  font-size: var(--sm);
+  transition: transform 1s;
+}
+
+small:hover {
+  transform: scale(1.5);
+}

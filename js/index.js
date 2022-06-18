@@ -58,7 +58,9 @@ const errorMessage = document.getElementById('error-message');
 
 form.addEventListener('submit', (e) => {
   const messages = [];
-  if (/[A-Z]/.test(email.value) === true) {
+  const isUpperCase = (string) => /[A-Z]/.test(string);
+
+  if (isUpperCase(email.value) === true) {
     messages.push('Email must be in lowercase!');
     errorMessage.innerText = messages.join(', ');
     e.preventDefault();
