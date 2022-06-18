@@ -52,29 +52,28 @@ closePopupBtn.addEventListener('click', () => {
   // body.style.overflowY = 'visible';
 });
 
+const email = document.getElementById('email');
 const form = document.querySelector('.contact-form');
-const formEmail = document.getElementById('formEmail');
 const errorMessage = document.getElementById('error-message');
 
 form.addEventListener('submit', (e) => {
   const messages = [];
   const isUpperCase = (string) => /[A-Z]/.test(string);
 
-  if (isUpperCase(formEmail.value) === true) {
+  if (isUpperCase(email.value) === true) {
     messages.push('Email must be in lowercase!');
     errorMessage.innerText = messages.join(', ');
     e.preventDefault();
   }
-  if (formEmail.value === '' || formEmail.value === null) {
+  if (email.value === '' || email.value === null) {
     messages.push('Email field can not be empty!');
     errorMessage.innerText = messages.join(', ');
     e.preventDefault();
   }
 });
 
-// Local storage functionality
 let formData = {
-  full_name: '',
+  name: '',
   email: '',
   message: '',
 };
@@ -84,7 +83,7 @@ if (localStorage.getItem('formData') !== null) {
   formData = JSON.parse(data);
 }
 
-const formElements = document.querySelectorAll('input, textarea');
+const formElements = document.querySelectorAll('input', 'area');
 formElements.forEach((element) => {
   element.value = formData[element.name];
   element.addEventListener('input', (e) => {
